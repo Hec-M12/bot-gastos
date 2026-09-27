@@ -8,7 +8,7 @@ Tardás unos 20 a 30 minutos la primera vez. No necesitás saber programar.
 
 ```text
 Quiero instalar "bot-gastos", un bot de Telegram gratuito y de código abierto que anota mis gastos personales.
-Código: https://github.com/REEMPLAZAR/bot-gastos
+Código: https://github.com/Hec-M12/bot-gastos
 Si podés abrir links, leé el README.md de ese repositorio. Si no podés, no importa: todo lo que necesitás está en este mensaje.
 
 Sos mi guía. No sé programar. Estas son tus reglas:
