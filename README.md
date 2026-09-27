@@ -25,10 +25,10 @@ Abrí **[INSTALAR-CON-IA.md](INSTALAR-CON-IA.md)**, copiá el mensaje que está 
 
 1. **Creá tu bot en Telegram:** buscá **@BotFather**, mandale `/newbot`, poné un nombre y un usuario que termine en `bot`. Te da un **token**: guardalo, no se lo pases a nadie.
 2. **Python 3.9 o más nuevo:** en la terminal, `python3 --version`. Si no lo tenés: Mac (te ofrece instalarlo solo al escribir `python3`, o python.org), Windows (python.org, marcá **«Add python.exe to PATH»**), Linux (`sudo apt install python3`).
-3. **Bajá esta carpeta:** botón verde **Code → Download ZIP**, descomprimila, renombrala a `bot-gastos` y ponela en tu carpeta personal (en Mac, **no** en Escritorio, Documentos ni Descargas). O con git: `git clone https://github.com/REEMPLAZAR/bot-gastos ~/bot-gastos`.
+3. **Bajá esta carpeta:** botón verde **Code → Download ZIP** y descomprimila. Movela a tu carpeta personal con el nombre `bot-gastos` (Mac/Linux: `mv ~/Downloads/bot-gastos-main ~/bot-gastos` · Windows: `Move-Item $HOME\Downloads\bot-gastos-main $HOME\bot-gastos`). En Mac **no** la dejes en Escritorio, Documentos ni Descargas. En Windows, si quedó una carpeta dentro de otra, la buena es la que tiene `bot.py`. O con git: `git clone https://github.com/REEMPLAZAR/bot-gastos ~/bot-gastos`.
 4. **Probalo sin Telegram:** en la terminal, `cd ~/bot-gastos` y `python3 bot.py --simular`. Escribí `45 pizza`, `/mes`, `salir`.
 5. **Configuralo sin tocar archivos:** `python3 configurar.py` (token, moneda, categorías y, si querés, correo y fotos).
-6. **Prendelo:** `python3 bot.py`. Te muestra un **código de 6 números**: mandáselo a tu bot en Telegram. Desde ahí el bot solo te hace caso a vos.
+6. **Prendelo:** `python3 bot.py`. Te muestra un **código de 6 números**: mandáselo a tu bot en Telegram. Desde ahí el bot solo te hace caso a vos. Dejá esa ventana abierta (si la cerrás, se apaga).
 7. **Dejalo prendido siempre** (cerrá antes la ventana del paso 6 con Ctrl+C):
    - Mac: `bash servicio/mac/instalar.sh`
    - Windows: `powershell -ExecutionPolicy Bypass -File servicio\windows\instalar.ps1`

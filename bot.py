@@ -61,7 +61,7 @@ def preparar(simulando: bool = False):
     except ErrorDeConfig as exc:
         sys.exit(f"❌ {exc}")
     if creado:
-        decir("Creé config.json con categorías de ejemplo. Editalo con tus categorías y topes cuando quieras.")
+        decir("Creé config.json con categorías de ejemplo. Para poner las tuyas: python3 configurar.py categorias")
     bancos = []
     if cfg.correo_bancos and (simulando or (env.get("CORREO_USUARIO") and env.get("CORREO_CLAVE_APP"))):
         try:
