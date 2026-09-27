@@ -1,0 +1,20 @@
+{
+  "_leeme": "Plantilla con un banco INVENTADO. Copiala como bancos/mi_banco.json, cambiá los datos por los de tu banco y agregá \"mi_banco\" en config.json → correo → bancos. Probala con: python3 probar_correo.py --banco bancos/mi_banco.json tu-correo.eml",
+  "nombre": "Banco Ejemplo",
+  "remitentes": ["banco-ejemplo"],
+  "asuntos_a_ignorar": ["contraseña", "promoción", "estado de cuenta"],
+  "formatos": [
+    {
+      "nombre": "Compra con tarjeta",
+      "asunto_contiene": ["compra"],
+      "tipo": "gasto",
+      "ignorar_si_contiene": ["rechazada", "declinada"],
+      "moneda_por_defecto": "USD",
+      "etiquetas": {
+        "monto": "Monto:",
+        "comercio": "Comercio:"
+      },
+      "patron_cuenta": "terminada en (\\d{4})"
+    }
+  ]
+}

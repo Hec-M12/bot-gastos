@@ -1,0 +1,19 @@
+From: BAC Credomatic <alertas@ejemplo.invalid>
+To: tu-correo@ejemplo.invalid
+Subject: BAC Credomatic Informa
+Date: Sat, 26 Sep 2026 13:45:00 -0600
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html><body>
+<p>Estimado cliente:</p>
+<p>BAC Credomatic le informa la siguiente transacción realizada con su tarjeta VISA ****4321</p>
+<table>
+<tr><td><b>Comercio</b></td><td><b>Monto</b></td></tr>
+<tr><td>PIZZERIA LA FAMOSA</td><td>USD 12.50</td></tr>
+<tr><td>Fecha</td><td>2026/09/26-13:45</td></tr>
+<tr><td>Estado</td><td>Aprobada</td></tr>
+</table>
+<p>Este correo es un ejemplo inventado para probar el bot.</p>
+</body></html>

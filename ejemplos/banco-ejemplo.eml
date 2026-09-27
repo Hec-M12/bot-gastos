@@ -1,0 +1,32 @@
+From: Banco Ejemplo <avisos@banco-ejemplo.invalid>
+To: tu-correo@ejemplo.invalid
+Subject: Aviso de compra con tu tarjeta
+Date: Sat, 26 Sep 2026 18:20:00 -0600
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="SEPARADOR"
+
+--SEPARADOR
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Hola, hiciste una compra con tu tarjeta terminada en 1234.
+Comercio: FARMACIA SAN ROQUE
+Monto: $ 45.90
+Fecha: 26/09/2026 18:20
+Este correo es un ejemplo inventado para probar el bot.
+
+--SEPARADOR
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html><body>
+<p>Hola, hiciste una compra con tu tarjeta terminada en 1234.</p>
+<table>
+<tr><td>Comercio:</td><td>FARMACIA SAN ROQUE</td></tr>
+<tr><td>Monto:</td><td>$ 45.90</td></tr>
+<tr><td>Fecha:</td><td>26/09/2026 18:20</td></tr>
+</table>
+<p>Este correo es un ejemplo inventado para probar el bot.</p>
+</body></html>
+
+--SEPARADOR--

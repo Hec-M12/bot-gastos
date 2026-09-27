@@ -1,0 +1,25 @@
+{
+  "_leeme": "Notificaciones de BAC Credomatic (el mismo formato en Centroamérica). Si a vos no te funciona, corré: python3 probar_correo.py tu-correo.eml y ajustá con tu IA.",
+  "nombre": "BAC",
+  "remitentes": ["baccredomatic", "credomatic", "bac.net", "@bac"],
+  "asuntos_a_ignorar": ["contraseña", "código de seguridad", "codigo de seguridad", "inicio de sesión", "inicio de sesion",
+                        "billetera", "bloqueo", "activación", "activacion", "promoción", "promocion", "descuento",
+                        "puntos", "estado de cuenta"],
+  "formatos": [
+    {
+      "nombre": "Compra con tarjeta",
+      "asunto_contiene": ["credomatic informa"],
+      "tipo": "gasto",
+      "ignorar_si_contiene": ["rechazada", "declinada", "denegada", "reversión", "reversion"],
+      "patron": "Comercio\\s*\\n\\s*Monto\\s*\\n\\s*(?P<comercio>.+?)\\s*\\n\\s*(?P<moneda>USD|LPS|HNL|GTQ|CRC|NIO|PAB|L|Q|\\$|₡)\\s*(?P<monto>[\\d,.]+)",
+      "patron_cuenta": "\\b(?:AMEX|VISA|MASTERCARD|MC)\\b[^\\n\\d]*[\\d*Xx]*?(\\d{4})\\b"
+    },
+    {
+      "nombre": "Movimiento en cuenta",
+      "asunto_contiene": ["movimiento monetario"],
+      "tipo": "movimiento",
+      "es_ingreso_si_contiene": ["monto recibido", "acreditad", "crédito a su cuenta", "credito a su cuenta"],
+      "patron": "por un monto de\\s*(?P<monto>[\\d,.]+)\\s*(?P<moneda>USD|LPS|HNL|GTQ|CRC|NIO|PAB|L|Q)"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "_leeme": "Copiá este archivo como config.json y cambiá lo que quieras. 'tope' = cuánto querés gastar como máximo al mes en esa categoría. 'palabras' = si la descripción o el comercio tiene alguna de esas palabras, cae en esa categoría. El 'id' es lo que escribís con # para forzar una categoría (ej. 45 pizza #comida).",
+  "moneda": "USD",
+  "simbolo": "$",
+  "separador_decimal": ".",
+  "tipos_de_cambio": {},
+  "resumen_diario_hora": 20,
+  "categorias": [
+    {
+      "id": "comida",
+      "nombre": "Comida fuera",
+      "tope": 150,
+      "palabras": ["restaurante", "pizza", "pizzeria", "burger", "hamburguesa", "pollo", "cafe", "starbucks", "sushi", "tacos",
+                   "mcdonald", "kfc", "wendy", "subway", "domino", "little caesars", "pedidos ya", "pedidosya",
+                   "rappi", "uber eats", "ubereats", "doordash", "grubhub", "almuerzo", "cena", "desayuno"]
+    },
+    {
+      "id": "super",
+      "nombre": "Súper y casa",
+      "tope": 300,
+      "palabras": ["super", "supermercado", "walmart", "despensa", "pricesmart", "costco", "pulperia",
+                   "tienda", "colonia", "paiz", "maxi", "target", "limpieza", "ferreteria"]
+    },
+    {
+      "id": "transporte",
+      "nombre": "Transporte",
+      "tope": 120,
+      "palabras": ["gasolina", "gasolinera", "combustible", "texaco", "shell", "puma", "uno ", "esso", "uber", "indriver",
+                   "didi", "taxi", "bus", "parqueo", "estacionamiento", "peaje", "taller", "llanta", "aceite", "lyft"]
+    },
+    {
+      "id": "servicios",
+      "nombre": "Servicios y cuentas",
+      "tope": 150,
+      "palabras": ["luz", "energia", "agua", "internet", "telefono", "celular", "claro", "tigo", "movistar", "cable",
+                   "recarga", "alquiler", "renta"]
+    },
+    {
+      "id": "salud",
+      "nombre": "Salud",
+      "tope": 60,
+      "palabras": ["farmacia", "pharmacy", "clinica", "hospital", "doctor", "medico", "laboratorio", "dentista", "optica"]
+    },
+    {
+      "id": "ocio",
+      "nombre": "Ocio y suscripciones",
+      "tope": 80,
+      "palabras": ["netflix", "spotify", "disney", "hbo", "max.com", "youtube", "apple.com", "google play", "steam",
+                   "playstation", "xbox", "nintendo", "cine", "cinemark", "concierto", "bar ", "cerveza"]
+    },
+    {
+      "id": "compras",
+      "nombre": "Compras en línea",
+      "tope": 80,
+      "palabras": ["amazon", "amzn", "shein", "temu", "aliexpress", "ebay", "mercadolibre", "mercado libre"]
+    },
+    {
+      "id": "otros",
+      "nombre": "Otros",
+      "tope": 60,
+      "palabras": []
+    }
+  ],
+  "categoria_por_defecto": "otros",
+  "correo": {
+    "servidor_imap": "imap.gmail.com",
+    "carpeta": "INBOX",
+    "revisar_cada_minutos": 10,
+    "bancos": ["bac"]
+  }
+}

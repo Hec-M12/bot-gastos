@@ -1,0 +1,18 @@
+# Tus datos y secretos: nunca se suben
+.env
+config.json
+datos/
+bancos/mi_*.json
+*.eml
+!ejemplos/*.eml
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Sistema
+.DS_Store
+Thumbs.db

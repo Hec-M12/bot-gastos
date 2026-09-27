@@ -1,0 +1,16 @@
+From: BAC Credomatic <alertas@ejemplo.invalid>
+To: tu-correo@ejemplo.invalid
+Subject: BAC Credomatic Informa
+Date: Sat, 26 Sep 2026 14:10:00 -0600
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html><body>
+<p>BAC Credomatic le informa que la siguiente transacción con su tarjeta VISA ****4321 fue RECHAZADA</p>
+<table>
+<tr><td>Comercio</td><td>Monto</td></tr>
+<tr><td>TIENDA DE EJEMPLO</td><td>USD 99.00</td></tr>
+</table>
+<p>Este correo es un ejemplo inventado para probar el bot.</p>
+</body></html>
